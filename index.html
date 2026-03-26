@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Sudoku Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>Random Sudoku Generator</h1>
+      <p class="description">
+        Tap a blank square and enter a number from 1 to 9. The puzzle will let
+        you know when every space is filled correctly.
+      </p>
+      <div class="controls">
+        <button id="generate-button" type="button">Generate Puzzle</button>
+        <button id="clear-button" type="button" class="secondary-button">Clear Entries</button>
+      </div>
+
+      <p id="status" class="status">Building your first puzzle...</p>
+    </section>
+
+    <section class="board-wrap" aria-label="Sudoku puzzle">
+      <div id="sudoku-board" class="board"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
